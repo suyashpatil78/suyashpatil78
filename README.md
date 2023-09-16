@@ -17,5 +17,6 @@
 </p>
     
 <p align="center">
+    ![](./profile-3d-contrib/profile-green-animate.svg)
     <img src="http://github-readme-streak-stats.herokuapp.com?user=suyashpatil78&theme=dark" alt="github-streak-stats"/>
 </p>
