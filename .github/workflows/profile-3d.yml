@@ -15,6 +15,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ github.token }}
       - name: Create Pull Request
         id: create_pull_request
         uses: peter-evans/create-pull-request@v3
