@@ -26,6 +26,10 @@ jobs:
           title: "Update 3D Contribution"
           body: "Automatically generated update to 3D contribution."
 
+      - name: Set up GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Merge Pull Request
         if: steps.create_pull_request.outputs.pull-request-number
         run: |
