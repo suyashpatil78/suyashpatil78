@@ -35,4 +35,5 @@ jobs:
           pr_number="${{ steps.create_pull_request.outputs.pull-request-number }}"
           echo "Pull Request Number: $pr_number"
           echo "Merging the pull request..."
-          gh pr merge --auto $pr_number
+          gh pr merge --auto --merge $pr_number
+
