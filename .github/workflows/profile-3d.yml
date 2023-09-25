@@ -15,10 +15,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
+      - name: Create Pull Request
+        id: create_pull_request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-3d-contribution
+          commit-message: "Update 3D contribution"
+          title: "Update 3D Contribution"
+          body: "Automatically generated update to 3D contribution."
+
+      - name: Merge Pull Request
+        if: steps.create_pull_request.outputs.pull-request-number
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add -A .
-          git commit -m "3d contribution update"
-          git push
+          pr_number="${{ steps.create_pull_request.outputs.pull-request-number }}"
+          echo "Pull Request Number: $pr_number"
+          echo "Merging the pull request..."
+          gh pr merge --auto $pr_number
