@@ -1,6 +1,6 @@
 ## About me
-- I'm currently working as a Member of Technical Staff at [Fyle](https://www.fylehq.com/)
-- I'm currently exploring Angular and Ionic
+- I'm currently working as a Member of Technical Staff at [Fyle](https://www.fylehq.com/) having experience in Ionic, Angular, RxJS and Capacitor.
+- Currently I am exploring design patterns and system architecture.
 
 <p align="center">
 <a href="https://www.linkedin.com/in/suyash-patil/">
