@@ -1,5 +1,5 @@
 ## About me
-- I'm currently working as a Member of Technical Staff at [Fyle](https://www.fylehq.com/) having experience in Ionic, Angular, RxJS and Capacitor.
+- I have experience in Ionic, Angular, RxJS and Capacitor.
 - Currently I am exploring design patterns and system architecture.
 
 <p align="center">
